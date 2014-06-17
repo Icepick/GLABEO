@@ -7,8 +7,73 @@ html {
 }
 
 body {
-	padding-top: 70px;
-	padding-bottom: 30px;
+	font-size: 14px;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.btn {
+  border-radius: 3em;
+}
+.navbar {
+  background: transparent;
+  border: none;
+  padding: 0.5em 0;
+  margin-bottom: 0;
+}
+.navbar .navbar-brand {
+  color: #000;
+  font-family: georgia, serif;
+  font-weight: bold;
+}
+.navbar ul.nav li a {
+  color: #111;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 1.5em;
+}
+.navbar ul.nav li a:hover {
+  color: #000;
+}
+.navbar ul.nav li button {
+  margin: 0.7em 0 0 1em;
+}
+.content-photo {
+  width: 100%;
+}
+.content-text h3 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+.content-text p {
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+.spacer {
+  margin: 3em 0;
+}
+
+.jumbotron {
+  background: #f0f0f0;
+  background-image: url(http://placehold.it/1600x450);
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #333;
+  padding-top: 2em;
+  height: 450px;
+  text-align: left;
+  margin: 0;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 1.2em 0 0.6em;
+  margin-top: 3em;
 }
 
 
@@ -19,19 +84,56 @@ body {
 /* Extra small devices (phones, less than 768px) */
 /* No media query -> mobile first strategy */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media screen and (max-width: 480px) {
+  .jumbotron {
+    font-size: 12px;
+    height: 150px;
+    padding-top: 0.1em;
+  }
+  
+  footer .pull-right {
+    display: none;
+  }
+}
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 300px;
+    padding-top: 1em;
+  }
+  
+  .content-photo {
+    margin: 0.1em 0;
+  }
+  
+  .jumbotron h2 {
+    max-width: 100%;
+  }
+  
+  .navbar ul.nav li {
+    text-align: center;
+  }
+  
+  .navbar ul.nav li button {
+    margin: 1em 0;
+  }
+  
+  .media-benefit {
+    margin-bottom: 2em;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
+@media (max-width: 1200px) {
+  .jumbotron {
+    height: 350px;
+  }
 }
 
 /* for higher resolutions (android and retina) */
