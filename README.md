@@ -1,2 +1,2 @@
-web_glabeo
+GLABEO
 ==========

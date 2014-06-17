@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>GLABEO</name>
+	<creationDate>2014-06-14</creationDate>
+	<author>Dominique Sorg</author>
+	<author>Benjamin Kehl</author>
+	<copyright>Copyright © 2014</copyright>
+	<version>1.0.0</version>
+	<description><![CDATA[ 
+		<h1>GLABEO</h1>
+		<p>Created by Dominique Sorg and Benjamin Kehl</a>.</p>
+	]]></description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>scss</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions>
+		<position>debug</position>
+	</positions>
+	
+</extension>
