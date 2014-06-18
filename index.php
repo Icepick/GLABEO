@@ -67,7 +67,31 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
       </div> <!-- /.container -->
     </nav> <!-- /.navbar -->
 
-    <div class="jumbotron"></div> <!-- /.jumbotron -->
+	<header id="top-section">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="jumbotron">
+		<div class="container">
+			<div class="row">
+			
+				<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8" style="padding-right:30px;padding-top:200px">
+									
+					<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0.6);border:0px;">
+						<div class="panel-body">
+							<blockquote>
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							</blockquote>						
+						</div>
+					</div>
+				
+				</div>
+				
+			</div><!-- /ROW-->
+		</div>
+      </div>
+	</header>
+	
+	
+    <!--<div class="jumbotron"></div>--> <!-- /.jumbotron -->
 
     <div class="spacer"></div>
 
@@ -108,7 +132,22 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
       </div> <!-- /.container -->
     </footer>
 
-  <jdoc:include type="modules" name="debug" />
+	<jdoc:include type="modules" name="debug" />
+	
+	<!-- placeholder -->
+	<jdoc:include type="modules" name="position-0" style="none" />
+	<jdoc:include type="modules" name="position-1" style="none" />
+	<jdoc:include type="modules" name="position-2" style="none" />
+	<jdoc:include type="modules" name="position-3" style="none" />
+	<jdoc:include type="modules" name="position-4" style="none" />
+	<jdoc:include type="modules" name="position-5" style="none" />
+	<jdoc:include type="modules" name="position-6" style="none" />
+	<jdoc:include type="modules" name="position-7" style="none" />
+	<jdoc:include type="modules" name="position-8" style="none" />
+	<jdoc:include type="modules" name="banner" style="xhtml" />
+	<jdoc:include type="message" />
+	<jdoc:include type="component" />
+
 </body>
 
 </html>

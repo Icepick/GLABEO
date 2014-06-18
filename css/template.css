@@ -17,25 +17,29 @@ body, h1, h2, h3, h4, h5, h6 {
 .btn {
   border-radius: 3em;
 }
+
 .navbar {
   background: transparent;
+  background-color:#fe6100;
   border: none;
   padding: 0.5em 0;
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
-.navbar .navbar-brand {
-  color: #000;
+
+.navbar .navbar-brand  {
+  color: #fff;
   font-family: georgia, serif;
   font-weight: bold;
 }
+
 .navbar ul.nav li a {
-  color: #111;
+  color: #fff;
   padding-left: 0;
   padding-right: 0;
   margin: 0 1.5em;
 }
 .navbar ul.nav li a:hover {
-  color: #000;
+  color: #fff;
 }
 .navbar ul.nav li button {
   margin: 0.7em 0 0 1em;
@@ -58,7 +62,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .jumbotron {
   background: #f0f0f0;
-  background-image: url(http://placehold.it/1600x450);
+  background-image: url(http://placehold.it/1600x550);
   background-size: 100%;
   background-position: center top;
   background-repeat: no-repeat;
