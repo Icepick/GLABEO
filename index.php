@@ -1,4 +1,7 @@
-﻿<?php defined( '_JEXEC' ) or die; 
+﻿<?php 
+
+// No direct access
+( '_JEXEC' ) or die; 
 
 // variables
 $app = JFactory::getApplication();
@@ -48,21 +51,18 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
   <nav class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand nav-link" href="#top">GLABEO GmbH</a>
+          <a class="navbar-brand nav-link" href="#top">GLABEO GmbH</a>-->
+		  <jdoc:include type="modules" name="banner" style="xhtml" />
+		  
         </div> <!-- /.navbar-header -->
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Startseite</a></li>
-            <li><a href="#">Dienstleistung</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#">Über Uns</a></li>
-          </ul>
+			<jdoc:include type="modules" name="position-9" style="none" />
         </div> <!-- /.navbar-collapse -->
       </div> <!-- /.container -->
     </nav> <!-- /.navbar -->
@@ -76,11 +76,12 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
 				<div class="text-left col-xs-12 col-sm-8 col-md-8 col-lg-8" style="padding-right:30px;padding-top:200px">
 									
 					<div class="panel panel-default" style="background-color: rgba(245, 245, 245, 0.6);border:0px;">
-						<div class="panel-body">
+						<jdoc:include type="modules" name="maincontent" style="none" />
+						<!--<div class="panel-body">
 							<blockquote>
 							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 							</blockquote>						
-						</div>
+						</div>-->
 					</div>
 				
 				</div>
@@ -99,7 +100,8 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
       <div class="row">
         
         <div class="col-md-8 col-sm-6 content-text">
-          <h3>Herzlich Willkommen</h3>
+		<jdoc:include type="component" />
+          <!--<h3>Herzlich Willkommen</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
@@ -111,7 +113,7 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
             ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          </p>
+          </p>-->
         </div> <!-- /.col-md-8 -->
 		
 		<div class="col-md-4 col-sm-6">
@@ -127,14 +129,15 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
     <footer>
       <div class="container clearfix">
         <p class="text-center">
-          Copyright © 2014 - All rights reserved.
+			<jdoc:include type="modules" name="footer" style="none" />
+          <!--Copyright © 2014 - All rights reserved. -->
         </p>
       </div> <!-- /.container -->
     </footer>
 
 	<jdoc:include type="modules" name="debug" />
 	
-	<!-- placeholder -->
+	<!-- placeholder --><!--
 	<jdoc:include type="modules" name="position-0" style="none" />
 	<jdoc:include type="modules" name="position-1" style="none" />
 	<jdoc:include type="modules" name="position-2" style="none" />
@@ -147,7 +150,7 @@ $doc->addStyleSheet($tpath.'/css/template.css.php');
 	<jdoc:include type="modules" name="banner" style="xhtml" />
 	<jdoc:include type="message" />
 	<jdoc:include type="component" />
-
+-->
 </body>
 
 </html>
